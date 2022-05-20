@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#fff
+"
+        android:background="@drawable/card_edge"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgicon"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="#D55555" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cardeologist"
+                        android:textColor="#1B1A1A"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 Doctors"
+                        android:textColor="#100E0E"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
